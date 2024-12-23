@@ -2,12 +2,22 @@
     <a href="https://github.com/yiisoft" target="_blank">
         <img src="https://avatars0.githubusercontent.com/u/993323" height="100px">
     </a>
-    <h1 align="center">Yii 2 Basic Project Template</h1>
+    <h1 align="center">Yii 2 Task project </h1>
     <br>
 </p>
 
-Yii 2 Basic Project Template is a skeleton [Yii 2](https://www.yiiframework.com/) application best for
-rapidly creating small projects.
+<h4>
+Yii 2 Task project - main 2 endpoints are located in RestController file, Loan model contains mapping for 
+php entity and db table.
+Docker uses nginx & postgresql
+Used migration for table structure
+
+2 endpoints accesssible by next url:
+
+http://127.0.0.1:8000/rest/requests
+http://127.0.0.1:8000/rest/processor?delay=5
+
+</h4>
 
 The template contains the basic features including user login/logout and a contact page.
 It includes all commonly used configurations that would allow you to focus on adding new

@@ -2,6 +2,7 @@
 
 namespace app\controllers;
 
+use app\models\Loan;
 use Yii;
 use yii\filters\AccessControl;
 use yii\web\Controller;
@@ -123,6 +124,7 @@ class SiteController extends Controller
      */
     public function actionAbout()
     {
+        phpinfo();exit;
         return $this->render('about');
     }
 }

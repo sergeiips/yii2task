@@ -14,7 +14,7 @@ $config = [
     'components' => [
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
-            'cookieValidationKey' => '',
+            'cookieValidationKey' => 'UAC_jLIW4V9IdbTwmJcfjZER6SZTfppA',
         ],
         'cache' => [
             'class' => 'yii\caching\FileCache',
@@ -24,7 +24,7 @@ $config = [
             'enableAutoLogin' => true,
         ],
         'errorHandler' => [
-            'errorAction' => 'site/error',
+            'errorAction' => YII_DEBUG ? null : 'site/error',
         ],
         'mailer' => [
             'class' => \yii\symfonymailer\Mailer::class,
@@ -42,14 +42,15 @@ $config = [
             ],
         ],
         'db' => $db,
-        /*
+
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
+                'class' => 'app\controllers\RestController',
+                'controller' => '/',
             ],
         ],
-        */
     ],
     'params' => $params,
 ];
